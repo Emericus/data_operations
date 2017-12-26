@@ -1,0 +1,125 @@
+2017-12-25 23:51:43,642 - INFO 
+[[main]]
+Subscription file = subscriptions.ini
+
+
+2017-12-25 23:51:46,283 - INFO 
+[[main]]
+Exchange/Instrument/InstrumentCode:
+Bitfinex/BTCUSD/BTCUSD
+
+
+
+2017-12-25 23:51:46,284 - INFO 
+[[main]]
+Starting instrument Bitfinex-BTCUSD...
+
+
+2017-12-25 23:51:56,242 - INFO 
+[ExchGwBitfinexWs]
+Connecting to socket <ExchGwBitfinex>...
+
+
+2017-12-25 23:51:56,886 - INFO 
+[ExchGwBitfinexWs]
+Socket <ExchGwBitfinex> is opened.
+
+
+2017-12-25 23:52:00,606 - INFO 
+[ExchGwBitfinex]
+Instrument BTCUSD is subscribed in channel Bitfinex
+
+
+2017-12-25 23:52:00,614 - INFO 
+[ExchGwBitfinex]
+Bitfinex version: 1.1
+
+
+2017-12-25 23:52:00,637 - INFO 
+[ExchGwBitfinex]
+Subscription: trades, pair: BTCUSD, channel Id: 53
+
+
+2017-12-25 23:52:00,705 - INFO 
+[ExchGwBitfinex]
+Subscription: book, pair: BTCUSD, channel Id: 16642
+
+
+2017-12-25 23:52:00,763 - INFO 
+[MysqlClient]
+SQL error: (1364, "Field 'exchange' doesn't have a default value")
+SQL: insert into exch_instmt_20171225 (id,trade_px,trade_volume,b1,b2,b3,b4,b5,a1,a2,a3,a4,a5,bq1,bq2,bq3,bq4,bq5,aq1,aq2,aq3,aq4,aq5,order_date_time,trades_date_time,update_type) values (1,0.00000000,0.00000000,13458,13457,13455,13454,13453,13459,13460,13465,13467,13469,6.55773681,0.36000000,0.36000000,2.62840000,2.32000000,2.78833393,0.68810515,0.02330000,1.49460000,0.32087198,'20171225 22:52:00.714016','20000101 00:00:00.000000',1)
+
+
+2017-12-25 23:52:01,261 - INFO 
+[MysqlClient]
+SQL error: (1364, "Field 'exchange' doesn't have a default value")
+SQL: insert into exch_instmt_20171225 (id,trade_px,trade_volume,b1,b2,b3,b4,b5,a1,a2,a3,a4,a5,bq1,bq2,bq3,bq4,bq5,aq1,aq2,aq3,aq4,aq5,order_date_time,trades_date_time,update_type) values (2,13459,0.05000000,13458,13457,13455,13454,13453,13459,13460,13465,13467,13469,6.55773681,0.36000000,0.36000000,2.62840000,2.32000000,2.78833393,0.68810515,0.02330000,1.49460000,0.32087198,'20171225 22:52:00.714016','20171225 22:52:01.258090',2)
+
+
+2017-12-25 23:52:01,579 - INFO 
+[MysqlClient]
+SQL error: (1364, "Field 'exchange' doesn't have a default value")
+SQL: insert into exch_instmt_20171225 (id,trade_px,trade_volume,b1,b2,b3,b4,b5,a1,a2,a3,a4,a5,bq1,bq2,bq3,bq4,bq5,aq1,aq2,aq3,aq4,aq5,order_date_time,trades_date_time,update_type) values (3,13459,0.05000000,13458,13457,13455,13454,13453,13459,13460,13465,13467,13469,4.04743046,0.36000000,0.36000000,2.62840000,2.32000000,2.78833393,0.68810515,0.02330000,1.49460000,0.32087198,'20171225 22:52:01.558133','20171225 22:52:01.258090',1)
+
+
+2017-12-25 23:52:01,632 - INFO 
+[MysqlClient]
+SQL error: (1364, "Field 'exchange' doesn't have a default value")
+SQL: insert into exch_instmt_20171225 (id,trade_px,trade_volume,b1,b2,b3,b4,b5,a1,a2,a3,a4,a5,bq1,bq2,bq3,bq4,bq5,aq1,aq2,aq3,aq4,aq5,order_date_time,trades_date_time,update_type) values (4,13459,0.05000000,13458,13457,13455,13454,13453,13459,13460,13465,13467,13469,4.04743046,0.36000000,0.36000000,2.62840000,2.32000000,2.73833392,0.68810515,0.02330000,1.49460000,0.32087198,'20171225 22:52:01.611146','20171225 22:52:01.258090',1)
+
+
+2017-12-25 23:52:01,663 - INFO 
+[MysqlClient]
+SQL error: (1364, "Field 'exchange' doesn't have a default value")
+SQL: insert into exch_instmt_20171225 (id,trade_px,trade_volume,b1,b2,b3,b4,b5,a1,a2,a3,a4,a5,bq1,bq2,bq3,bq4,bq5,aq1,aq2,aq3,aq4,aq5,order_date_time,trades_date_time,update_type) values (5,13459,0.05000000,13458,13457,13455,13454,13453,13459,13460,13465,13466,13467,4.04743046,0.36000000,0.36000000,2.62840000,2.32000000,2.73833392,0.68810515,0.02330000,0.22700000,1.49460000,'20171225 22:52:01.643148','20171225 22:52:01.258090',1)
+
+
+2017-12-25 23:52:01,698 - INFO 
+[MysqlClient]
+SQL error: (1364, "Field 'exchange' doesn't have a default value")
+SQL: insert into exch_instmt_20171225 (id,trade_px,trade_volume,b1,b2,b3,b4,b5,a1,a2,a3,a4,a5,bq1,bq2,bq3,bq4,bq5,aq1,aq2,aq3,aq4,aq5,order_date_time,trades_date_time,update_type) values (6,13459,0.05000000,13458,13457,13455,13454,13453,13459,13460,13465,13466,13467,4.04743046,0.36000000,0.36000000,2.62840000,2.32000000,2.73833392,0.68810515,0.02330000,0.22700000,0.22600000,'20171225 22:52:01.673653','20171225 22:52:01.258090',1)
+
+
+2017-12-25 23:52:02,418 - INFO 
+[MysqlClient]
+SQL error: (1364, "Field 'exchange' doesn't have a default value")
+SQL: insert into exch_instmt_20171225 (id,trade_px,trade_volume,b1,b2,b3,b4,b5,a1,a2,a3,a4,a5,bq1,bq2,bq3,bq4,bq5,aq1,aq2,aq3,aq4,aq5,order_date_time,trades_date_time,update_type) values (7,13459,0.05000000,13458,13457,13455,13454,13453,13459,13460,13465,13466,13468,4.04743046,0.36000000,0.36000000,2.62840000,2.32000000,2.73833392,0.68810515,0.02330000,0.22700000,4.72740000,'20171225 22:52:02.371753','20171225 22:52:01.258090',1)
+
+
+2017-12-25 23:52:02,496 - INFO 
+[MysqlClient]
+SQL error: (1364, "Field 'exchange' doesn't have a default value")
+SQL: insert into exch_instmt_20171225 (id,trade_px,trade_volume,b1,b2,b3,b4,b5,a1,a2,a3,a4,a5,bq1,bq2,bq3,bq4,bq5,aq1,aq2,aq3,aq4,aq5,order_date_time,trades_date_time,update_type) values (8,13459,0.05000000,13458,13457,13455,13454,13453,13459,13460,13465,13466,13469,4.04743046,0.36000000,0.36000000,2.62840000,2.32000000,2.73833392,0.68810515,0.02330000,0.22700000,0.32087198,'20171225 22:52:02.430262','20171225 22:52:01.258090',1)
+
+
+2017-12-25 23:52:02,604 - INFO 
+[MysqlClient]
+SQL error: (1364, "Field 'exchange' doesn't have a default value")
+SQL: insert into exch_instmt_20171225 (id,trade_px,trade_volume,b1,b2,b3,b4,b5,a1,a2,a3,a4,a5,bq1,bq2,bq3,bq4,bq5,aq1,aq2,aq3,aq4,aq5,order_date_time,trades_date_time,update_type) values (9,13459,0.05000000,13458,13457,13455,13454,13453,13459,13460,13465,13466,13469,4.03999999,0.36000000,0.36000000,2.62840000,2.32000000,2.73833392,0.68810515,0.02330000,0.22700000,0.32087198,'20171225 22:52:02.531275','20171225 22:52:01.258090',1)
+
+
+2017-12-25 23:52:02,731 - INFO 
+[MysqlClient]
+SQL error: (1364, "Field 'exchange' doesn't have a default value")
+SQL: insert into exch_instmt_20171225 (id,trade_px,trade_volume,b1,b2,b3,b4,b5,a1,a2,a3,a4,a5,bq1,bq2,bq3,bq4,bq5,aq1,aq2,aq3,aq4,aq5,order_date_time,trades_date_time,update_type) values (10,13459,0.24670000,13458,13457,13455,13454,13453,13459,13460,13465,13466,13469,4.03999999,0.36000000,0.36000000,2.62840000,2.32000000,2.73833392,0.68810515,0.02330000,0.22700000,0.32087198,'20171225 22:52:02.716305','20171225 22:52:02.718306',2)
+
+
+2017-12-25 23:52:03,177 - INFO 
+[MysqlClient]
+SQL error: (1364, "Field 'exchange' doesn't have a default value")
+SQL: insert into exch_instmt_20171225 (id,trade_px,trade_volume,b1,b2,b3,b4,b5,a1,a2,a3,a4,a5,bq1,bq2,bq3,bq4,bq5,aq1,aq2,aq3,aq4,aq5,order_date_time,trades_date_time,update_type) values (11,13459,0.24670000,13458,13457,13455,13453,13450,13459,13460,13465,13466,13469,4.03999999,0.36000000,0.36000000,2.32000000,0.02000000,2.73833392,0.68810515,0.02330000,0.22700000,0.32087198,'20171225 22:52:03.138366','20171225 22:52:02.718306',1)
+
+
+2017-12-25 23:52:03,246 - INFO 
+[MysqlClient]
+SQL error: (1364, "Field 'exchange' doesn't have a default value")
+SQL: insert into exch_instmt_20171225 (id,trade_px,trade_volume,b1,b2,b3,b4,b5,a1,a2,a3,a4,a5,bq1,bq2,bq3,bq4,bq5,aq1,aq2,aq3,aq4,aq5,order_date_time,trades_date_time,update_type) values (12,13459,0.24670000,13458,13457,13455,13453,13450,13459,13460,13465,13469,13472,4.03999999,0.36000000,0.36000000,2.32000000,0.02000000,2.73833392,0.68810515,0.02330000,0.32087198,4.72740000,'20171225 22:52:03.188379','20171225 22:52:02.718306',1)
+
+
+2017-12-25 23:52:03,282 - INFO 
+[MysqlClient]
+SQL error: (1364, "Field 'exchange' doesn't have a default value")
+SQL: insert into exch_instmt_20171225 (id,trade_px,trade_volume,b1,b2,b3,b4,b5,a1,a2,a3,a4,a5,bq1,bq2,bq3,bq4,bq5,aq1,aq2,aq3,aq4,aq5,order_date_time,trades_date_time,update_type) values (13,13459,0.24670000,13458,13457,13455,13453,13450,13459,13460,13465,13469,13473,4.03999999,0.36000000,0.36000000,2.32000000,0.02000000,2.73833392,0.68810515,0.02330000,0.32087198,0.83363001,'20171225 22:52:03.258386','20171225 22:52:02.718306',1)
+
+
