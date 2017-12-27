@@ -82,5 +82,5 @@ def main2(**kwargs):
 if __name__ == '__main__':
     # main()
     main2(output='log.txt', mysqldest='user:pw@url:3306',
-          mysql=True, mysqlschema='schema_name', instmts='subscriptions.ini', exchtime=False)
+          mysql=True, mysqlschema='schema', instmts='subscriptions.ini', exchtime=False)
 

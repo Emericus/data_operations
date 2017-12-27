@@ -123,3 +123,25 @@ SQL error: (1364, "Field 'exchange' doesn't have a default value")
 SQL: insert into exch_instmt_20171225 (id,trade_px,trade_volume,b1,b2,b3,b4,b5,a1,a2,a3,a4,a5,bq1,bq2,bq3,bq4,bq5,aq1,aq2,aq3,aq4,aq5,order_date_time,trades_date_time,update_type) values (13,13459,0.24670000,13458,13457,13455,13453,13450,13459,13460,13465,13469,13473,4.03999999,0.36000000,0.36000000,2.32000000,0.02000000,2.73833392,0.68810515,0.02330000,0.32087198,0.83363001,'20171225 22:52:03.258386','20171225 22:52:02.718306',1)
 
 
+2017-12-27 13:14:34,475 - INFO 
+[[main]]
+Subscription file = subscriptions.ini
+
+
+2017-12-27 13:14:57,308 - INFO 
+[[main]]
+Exchange/Instrument/InstrumentCode:
+Bitfinex/BTCUSD/BTCUSD
+
+
+
+2017-12-27 13:15:15,196 - INFO 
+[[main]]
+Starting instrument Bitfinex-BTCUSD...
+
+
+2017-12-27 17:10:53,714 - INFO 
+[ExchGwBitfinexWs]
+Connecting to socket <ExchGwBitfinex>...
+
+

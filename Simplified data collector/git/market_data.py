@@ -85,7 +85,7 @@ class L2Depth(MarketDataBase):
         """
         Return static column types
         """
-        return ['varchar(25)'] + \
+        return ['datetime'] + \
                ['decimal(10,5)'] * 10 + \
                ['decimal(20,8)'] * 10
 
@@ -181,7 +181,7 @@ class Trade(MarketDataBase):
         """
         Return static column types
         """
-        return ['varchar(25)', 'text', 'decimal(10,5)', 'decimal(20,8)', 'int']
+        return ['datetime', 'text', 'decimal(10,5)', 'decimal(20,8)', 'int']
 
     def values(self):
         """
@@ -239,7 +239,7 @@ class Snapshot(MarketDataBase):
             return ['varchar(20)', 'varchar(20)', 'decimal(10,5)', 'decimal(20,8)'] + \
                    ['decimal(10,5)'] * 10 + \
                    ['decimal(20,8)'] * 10 + \
-                   ['varchar(25)', 'varchar(25)', 'int']
+                   ['datetime', 'datetime', 'int']
         else:
             return ['decimal(10,5)', 'decimal(20,8)'] + \
                    ['decimal(10,5)'] * 10 + \

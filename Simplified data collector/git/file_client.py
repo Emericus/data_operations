@@ -1,5 +1,5 @@
-from befh.database_client import DatabaseClient
-from befh.util import Logger
+from database_client import DatabaseClient
+from util import Logger
 import threading
 import os
 import csv

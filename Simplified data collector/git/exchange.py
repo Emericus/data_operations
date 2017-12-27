@@ -7,6 +7,7 @@ from threading import Lock
 
 
 class ExchangeGateway:
+
     ############################################################################
     # Static variable 
     # Applied on all gateways whether to record the timestamp in local machine,
@@ -113,21 +114,21 @@ class ExchangeGateway:
                                                             instmt.get_l2_depth(),
                                                             Trade() if instmt.get_last_trade() is None else instmt.get_last_trade(),
                                                             Snapshot.UpdateType.ORDER_BOOK),
-                                     primary_key_index=[0,1],
-                                     is_orreplace=True,
+                                     primary_key_index=[0, 1],
+                                     is_orreplace=True,  # maybe I could change this one to get a history
                                      is_commit=True)
 
                 if self.is_allowed_instmt_record(db_client):
                     db_client.insert(table=instmt.get_instmt_snapshot_table_name(),
-                                          columns=['id'] + Snapshot.columns(False),
-                                          types=['int'] + Snapshot.types(False),
-                                          values=[id] +
-                                                  Snapshot.values('',
-                                                                 '',
-                                                                 instmt.get_l2_depth(),
-                                                                 Trade() if instmt.get_last_trade() is None else instmt.get_last_trade(),
-                                                                 Snapshot.UpdateType.ORDER_BOOK),
-                                          is_commit=True)
+                                     columns=['id'] + Snapshot.columns(),
+                                     types=['int'] + Snapshot.types(),
+                                     values=[id] + Snapshot.values(instmt.get_exchange_name(),
+                                                                   instmt.get_instmt_name(),
+                                                                   instmt.get_l2_depth(),
+                                                                   Trade() if instmt.get_last_trade() is None else instmt.get_last_trade(),
+                                                                   Snapshot.UpdateType.ORDER_BOOK),
+                                     primary_key_index=[0, 1, 2],
+                                     is_commit=True)
 
     def insert_trade(self, instmt, trade):
         """
@@ -161,18 +162,19 @@ class ExchangeGateway:
                                                             instmt.get_last_trade(),
                                                             Snapshot.UpdateType.TRADES),
                                      types=Snapshot.types(),
-                                     primary_key_index=[0,1],
+                                     primary_key_index=[0, 1],
                                      is_orreplace=True,
                                      is_commit=not is_allowed_instmt_record)
 
+                db_client.insert(table=instmt.get_instmt_snapshot_table_name(),
+                                 columns=['id'] + Snapshot.columns(),
+                                 types=['int'] + Snapshot.types(),
+                                 values=[id] + Snapshot.values(instmt.get_exchange_name(),
+                                                               instmt.get_instmt_name(),
+                                                               instmt.get_l2_depth(),
+                                                               instmt.get_last_trade(),
+                                                               Snapshot.UpdateType.TRADES),
+                                 primary_key_index=[0, 1, 2],
+                                 is_commit=True)
                 if is_allowed_instmt_record:
-                    db_client.insert(table=instmt.get_instmt_snapshot_table_name(),
-                                     columns=['id'] + Snapshot.columns(False),
-                                     types=['int'] + Snapshot.types(False),
-                                     values=[id] +
-                                            Snapshot.values('',
-                                                         '',
-                                                         instmt.get_l2_depth(),
-                                                         instmt.get_last_trade(),
-                                                         Snapshot.UpdateType.TRADES),
-                                     is_commit=True)
+                    pass
