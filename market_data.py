@@ -64,7 +64,7 @@ class L2Depth(MarketDataBase):
         :param depth: Number of depth
         """
         MarketDataBase.__init__(self)
-        self.date_time = datetime(2000, 1, 1, 0, 0, 0).strftime("%Y%m%d %H:%M:%S.%f")
+        self.date_time = datetime(2000, 1, 1, 0, 0, 0).strftime("%Y-%m-%d %H:%M:%S.%f")
         self.depth = depth
         self.bids = [MarketDataBase.Depth() for i in range(0, self.depth)]
         self.asks = [MarketDataBase.Depth() for i in range(0, self.depth)]
@@ -161,7 +161,7 @@ class Trade(MarketDataBase):
         :param default_format: Default date time format
         """
         MarketDataBase.__init__(self)
-        self.date_time = datetime(2000, 1, 1, 0, 0, 0).strftime("%Y%m%d %H:%M:%S.%f")
+        self.date_time = datetime(2000, 1, 1, 0, 0, 0).strftime("%Y-%m-%d %H:%M:%S.%f")
         self.trade_id = ''
         self.trade_price = 0.0
         self.trade_volume = 0.0

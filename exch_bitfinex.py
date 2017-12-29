@@ -41,7 +41,7 @@ class ExchGwBitfinexWs(WebSocketApiClient):
         """
         # No order book mapping from config. Need to decode here.
         l2_depth = instmt.get_l2_depth()
-        l2_depth.date_time = datetime.utcnow().strftime("%Y%m%d %H:%M:%S.%f")
+        l2_depth.date_time = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S.%f")
         if isinstance(raw[0], list):
             # Start subscription
             for i in range(0, 25):
@@ -147,7 +147,7 @@ class ExchGwBitfinexWs(WebSocketApiClient):
         trade_price = raw[2]
         trade_volume = raw[3]
         
-        trade.date_time = datetime.utcfromtimestamp(timestamp).strftime("%Y%m%d %H:%M:%S.%f")
+        trade.date_time = datetime.utcfromtimestamp(timestamp).strftime("%Y-%m-%d %H:%M:%S.%f")
         trade.trade_side = Trade.Side.BUY if trade_volume > 0 else Trade.Side.SELL
         trade.trade_volume = abs(trade_volume)
         trade.trade_id = str(trade_id)
